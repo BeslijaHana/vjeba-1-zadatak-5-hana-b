@@ -1,0 +1,13 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="ZIQDLVj;o0c?(4bf9^Jc">temp</variable></variables><block type="device_button_event" id="yDl}TEJgO6cZ@l+2=Eqq" x="31" y="-310"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="synth_set_volume" id="(7h4^(|r9;6+[$M*E{Y1"><value name="volume"><shadow type="math_number_minmax" id="U.h}8T_xeRf8[O,h:xGT"><mutation min="0" max="255" label="Volume" precision="0"></mutation><field name="SLIDER">200</field></shadow></value><next><block type="variables_set" id="@N}t_{+iQ3lumS?61m4|"><field name="VAR" id="ZIQDLVj;o0c?(4bf9^Jc">temp</field><value name="VALUE"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="device_temperature" id=".Q*+GIi)u[_./$eUbZWP"></block></value><next><block type="controls_if" id="`rlZ)|.p!TLTurU56kFI"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="9m-Zf}@cQ_FWOE+)^Jmi"><field name="OP">LT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_temperature" id="6TW.uvV}Aoc-]4(Up(|D"></block></value><value name="B"><shadow type="math_number" id="sseEgi-Fli%FrbEfucF-"><field name="NUM">23</field></shadow></value></block></value><statement name="DO0"><block type="device_play_note" id="uL(1CkQw-h5/y=gAz!Fj"><value name="note"><shadow type="device_note" id="]O%iKPN.D[1kBD/glIR-"><field name="name">262</field></shadow></value><value name="duration"><shadow type="device_beat" id="l9Uh=:}W]FiQ101q5_Yu"><field name="fraction">BeatFraction.Whole</field></shadow></value><next><block type="device_show_leds" id="B]I+M]bo9w2bD5NEgExL"><field name="LEDS">`
+        . . # . . 
+        . . # . . 
+        # . # . # 
+        . # # # . 
+        . . # . .
+        `</field></block></next></block></statement><statement name="ELSE"><block type="device_play_note" id="Nkt)#ib1]*r94t5g_uU!"><value name="note"><shadow type="device_note" id="kHsSI+XLM$qAD-Ueyw1,"><field name="name">220</field></shadow></value><value name="duration"><shadow type="device_beat" id=",Z4O##E}S(,Qe;c_Rg0-"><field name="fraction">BeatFraction.Whole</field></shadow></value><next><block type="device_show_leds" id="/]vG-%XGCX`o?R(=Btc#"><field name="LEDS">`
+        . . # . . 
+        . # # # . 
+        # . # . # 
+        . . # . . 
+        . . # . .
+        `</field></block></next></block></statement></block></next></block></next></block></statement></block></xml>
